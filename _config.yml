@@ -23,15 +23,16 @@ repository: "zhuyilun0409/zhuyilun0409.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  avatar: "profile.png"
+  name: "Yilun Zhu"
+  bio: "Computer Science and Technology student at Chien-Shiung Wu College, Southeast University"
+  location: "Nanjing, China"
+  employer: "Southeast University"
+  email:
+  github: "zhuyilun0409"
+  googlescholar:
+  linkedin:
+  orcid:
 
   # Academic websites
   academia         : # URL
