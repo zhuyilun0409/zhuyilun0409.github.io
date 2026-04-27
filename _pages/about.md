@@ -1,8 +1,10 @@
 ---
-layout: archive
-title: "About Me"
 permalink: /
+title: "About Me"
 author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
 ---
 
 I am an undergraduate student majoring in Computer Science and Technology at Chien-Shiung Wu College, Southeast University.
@@ -12,8 +14,8 @@ My current research interest is multimodal large language models.
 ## Education
 
 **Southeast University**, Nanjing, China  
-B.Eng. in Computer Science and Technology, Chien-Shiung Wu College  
-Expected graduation: 
+Chien-Shiung Wu College  
+B.Eng. in Computer Science and Technology  
 
 ## Research Interests
 
@@ -39,4 +41,4 @@ To be updated.
 
 ## Contact
 
-Email: 
+Email:
