@@ -20,8 +20,6 @@ B.Eng. in Computer Science and Technology
 ## Research Interests
 
 - Multimodal Large Language Models
-- 
-- 
 
 ## Research Experience
 
