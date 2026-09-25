@@ -1,0 +1,48 @@
+- id: moment-video
+  title: "Moment-Video: Diagnosing Temporal Fidelity of Video MLLMs on Momentary Visual Events"
+  short_title: Moment-Video
+  image: /images/moment-video-overview.jpg
+  image_width: 2200
+  image_height: 981
+  image_alt: "Moment-Video overview: seven video domains and their subcategories, with closed-ended and open-ended evaluation examples."
+  image_caption: Video domains and evaluation protocols
+  year: 2026
+  venue: arXiv preprint
+  authors:
+    - name: Xiaolin Liu
+      equal: true
+    - name: Yilun Zhu
+      equal: true
+    - name: Xiangyu Zhao
+      equal: true
+    - name: Xuehui Wang
+    - name: Yan Li
+    - name: Xin Li
+    - name: Haoyu Cao
+    - name: Xing Sun
+    - name: Shaofeng Zhang
+    - name: Xu Yang
+    - name: Zhihang Zhong
+    - name: Xue Yang
+  summary: A benchmark for testing whether video MLLMs can notice, count, describe, and reason about brief but decisive visual events.
+  metrics:
+    - value: "1,000"
+      label: video–QA pairs
+    - value: "7"
+      label: video domains
+    - value: "33"
+      label: models evaluated
+  paper_url: https://arxiv.org/abs/2606.02522
+  code_url: https://github.com/VisionXLab/Moment-Video
+  project_url: https://moment-video.netlify.app/
+  data_url: https://huggingface.co/datasets/VisionXLab/Moment-Video
+  citation: |
+    @misc{liu2026momentvideodiagnosingtemporalfidelity,
+      title={Moment-Video: Diagnosing Temporal Fidelity of Video MLLMs on Momentary Visual Events},
+      author={Xiaolin Liu and Yilun Zhu and Xiangyu Zhao and Xuehui Wang and Yan Li and Xin Li and Haoyu Cao and Xing Sun and Shaofeng Zhang and Xu Yang and Zhihang Zhong and Xue Yang},
+      year={2026},
+      eprint={2606.02522},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2606.02522}
+    }

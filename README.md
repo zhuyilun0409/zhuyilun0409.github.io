@@ -1,3 +1,36 @@
+# Yilun Zhu — personal homepage
+
+A blue academic homepage built on the existing Jekyll / GitHub Pages setup.
+The introduction pairs a biography with a portrait on the right. Research, news, publications,
+and education follow a shared heading hierarchy, with compact lists and readable paper metadata.
+Hover details include a lifting portrait, animated navigation underlines, soft reading highlights,
+and button feedback. Motion is limited to mouse input and respects reduced-motion preferences;
+interactive elements also retain visible keyboard focus.
+
+## Editing this homepage
+
+- `_pages/about.md`: biography and homepage sections.
+- `_data/profile.yml`: profile links, portrait, research interests, news, and education.
+- `_data/selected_publications.yml`: selected papers, author order, links, metrics, and BibTeX.
+- `assets/css/profile.css`: responsive light / dark theme.
+- `assets/js/profile.js`: theme preference, section navigation, and citation copying.
+- `_layouts/profile.html`: standalone homepage layout; the existing theme remains available for other pages.
+
+The Shanghai Jiao Tong University master's entry is **incoming, starting in 2027**.
+Keep it in the future tense until enrollment. No undergraduate start or graduation date is assumed.
+The supplied portrait is displayed with a responsive CSS crop; the original photo is preserved.
+The publication figure is a faithful raster rendering of the supplied PDF and can be opened at full resolution.
+Add an email to `profile.yml` when ready; no blank email link is shown.
+
+Paper metadata follows [arXiv:2606.02522](https://arxiv.org/abs/2606.02522) and the
+[Moment-Video repository](https://github.com/VisionXLab/Moment-Video).
+The selected paper is labeled as an arXiv preprint, not a conference publication.
+
+Run `bundle install`, then `bundle exec jekyll serve` with a supported Ruby installation.
+The homepage adds no npm dependencies, CDN assets, or Jekyll plugins.
+
+---
+
 # Academic Pages
 **Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 

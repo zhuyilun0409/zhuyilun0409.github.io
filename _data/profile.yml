@@ -1,0 +1,45 @@
+# Personal homepage content. Keep future appointments explicitly marked as incoming.
+name: Yilun Zhu
+initials: YZ
+focus: Multimodal intelligence & video understanding
+location: Nanjing, China
+# Blank contact fields are not rendered.
+portrait: /images/yilun-zhu.jpg
+email:
+scholar: https://scholar.google.com/citations?user=ptcnWOkAAAAJ&hl=en
+github: https://github.com/zhuyilun0409
+research:
+  - title: Multimodal learning
+    label: VISION + LANGUAGE
+    description: Multimodal large language models that connect visual evidence with language understanding.
+    icon: modalities
+  - title: Video understanding
+    label: MOTION + TIME
+    description: Capturing brief visual events and the temporal details that matter for understanding a video.
+    icon: video
+  - title: Model evaluation
+    label: BENCHMARKS + INSIGHT
+    description: Diagnosing what video models can perceive, preserve, and reason about through targeted evaluation.
+    icon: evaluation
+education:
+  - institution: Shanghai Jiao Tong University
+    abbreviation: SJTU
+    url: https://www.sjtu.edu.cn/
+    degree: Incoming master's student
+    school: School of Automation and Intelligent Sensing
+    period: Starting 2027
+    status: Incoming
+    upcoming: true
+  - institution: Southeast University
+    abbreviation: SEU
+    url: https://www.seu.edu.cn/
+    degree: B.Eng. in Computer Science and Technology
+    school: Chien-Shiung Wu College
+    period: Undergraduate
+    status: Current
+    upcoming: false
+news:
+  - date: "2026.06"
+    datetime: "2026-06-01"
+    text: Our work on momentary visual event understanding, Moment-Video, is now available on arXiv.
+    url: https://arxiv.org/abs/2606.02522
