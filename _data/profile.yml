@@ -19,7 +19,7 @@ research:
     icon: video
   - title: Model evaluation
     label: BENCHMARKS + INSIGHT
-    description: Diagnosing what video models can perceive, preserve, and reason about through targeted evaluation.
+    description: Evaluating how multimodal models perceive visual evidence, reason about instructions, and preserve consistency.
     icon: evaluation
 education:
   - institution: Shanghai Jiao Tong University
@@ -39,7 +39,13 @@ education:
     status: Current
     upcoming: false
 news:
+  - date: "2026.10"
+    datetime: "2026-10-09"
+    text: Our work RISEBench++ and RISE-Agent for reasoning-informed visual editing is now available on arXiv, with code and data released.
+    url: https://arxiv.org/abs/2610.12343
+    link_aria_label: Read Reasoning-Informed Visual Editing on arXiv
   - date: "2026.06"
     datetime: "2026-06-01"
     text: Our work on momentary visual event understanding, Moment-Video, is now available on arXiv.
     url: https://arxiv.org/abs/2606.02522
+    link_aria_label: Read Moment-Video on arXiv

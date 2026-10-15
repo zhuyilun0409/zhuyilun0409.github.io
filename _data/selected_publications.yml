@@ -1,3 +1,55 @@
+- id: risebench-plusplus
+  title: "Reasoning-Informed Visual Editing"
+  short_title: RISEBench++
+  image: /images/risebench-plusplus-overview.webp
+  image_width: 2600
+  image_height: 1765
+  image_alt: "RISEBench++ overview and example visual editing tasks across temporal, causal, spatial, logical, counterfactual, and hybrid reasoning."
+  image_caption: RISEBench++ overview and example tasks
+  year: 2026
+  venue: arXiv preprint
+  authors:
+    - name: Xue Yang
+      corresponding: true
+    - name: Peiyuan Zhang
+      core: true
+    - name: Yilun Zhu
+      core: true
+    - name: Qihao Yang
+      core: true
+    - name: Mingxin Liu
+    - name: Xiangyu Zhao
+    - name: Ziqian Fan
+    - name: Zhaokai Wang
+    - name: Yan Li
+    - name: Yifan Yang
+    - name: Xu Yang
+    - name: Xiaosong Jia
+    - name: Yue Zhou
+    - name: Zhihang Zhong
+    - name: Junchi Yan
+  contribution_note: "* Core student contributors · † Corresponding author"
+  summary: "RISEBench++ evaluates reasoning-informed visual editing across single-image, multi-image, and multi-turn settings. We also introduce RISE-Agent, a training-free framework combining planning, tool-augmented execution, and verifier-guided refinement."
+  metrics:
+    - value: "1,000"
+      label: test cases (EN/ZH)
+    - value: "6"
+      label: reasoning dimensions
+    - value: "58"
+      label: approaches evaluated
+  paper_url: https://arxiv.org/abs/2610.12343
+  code_url: https://github.com/VisionXLab/RISEBench/tree/main/RISEBench%2B%2B
+  project_url: https://huggingface.co/spaces/VisionXLab/RISEBench_Leaderboard
+  project_label: Leaderboard
+  data_url: https://huggingface.co/datasets/VisionXLab/RISEBench-plusplus
+  citation: |
+    @article{yang2026reasoning,
+      title={Reasoning-Informed Visual Editing},
+      author={Yang, Xue and Zhang, Peiyuan and Zhu, Yilun and Yang, Qihao and Liu, Mingxin and Zhao, Xiangyu and Fan, Ziqian and Wang, Zhaokai and Li, Yan and Yang, Yifan and others},
+      journal={arXiv preprint arXiv:2610.12343},
+      year={2026}
+    }
+
 - id: moment-video
   title: "Moment-Video: Diagnosing Temporal Fidelity of Video MLLMs on Momentary Visual Events"
   short_title: Moment-Video
@@ -24,6 +76,7 @@
     - name: Xu Yang
     - name: Zhihang Zhong
     - name: Xue Yang
+  contribution_note: "* Equal contribution"
   summary: A benchmark for testing whether video MLLMs can notice, count, describe, and reason about brief but decisive visual events.
   metrics:
     - value: "1,000"

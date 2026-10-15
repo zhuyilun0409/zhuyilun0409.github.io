@@ -16,7 +16,7 @@ redirect_from:
     <div class="biography">
       <p>I am an undergraduate in <strong>Computer Science and Technology</strong> at <a href="https://www.seu.edu.cn/">Southeast University</a>, Chien-Shiung Wu College.</p>
       <p>Starting in <strong>2027</strong>, I will pursue my master's degree at the <strong>School of Automation and Intelligent Sensing, Shanghai Jiao Tong University</strong>.</p>
-      <p>My research interests lie in <strong>multimodal large language models</strong>, with a particular focus on video understanding and temporal fidelity.</p>
+      <p>My research interests lie in <strong>multimodal large language models</strong>, with a particular focus on video understanding, reasoning-informed visual editing, and model evaluation.</p>
     </div>
     <div class="social-links" aria-label="Academic and social profiles">
       <a class="button button-primary" href="{{ profile.scholar }}">{% include profile-icon.html name='scholar' %} Google Scholar {% include profile-icon.html name='arrow' %}</a>
@@ -50,7 +50,7 @@ redirect_from:
       <div class="section-heading"><h2 id="news-title">News</h2></div>
       <ul class="news-list">
         {% for item in profile.news %}
-        <li class="news-item"><time datetime="{{ item.datetime }}">{{ item.date }}</time><p>{{ item.text }} <a href="{{ item.url }}" aria-label="Read Moment-Video on arXiv">Read paper {% include profile-icon.html name='arrow' %}</a></p></li>
+        <li class="news-item"><time datetime="{{ item.datetime }}">{{ item.date }}</time><p>{{ item.text }} <a href="{{ item.url }}" aria-label="{{ item.link_aria_label | default: 'Read paper' | escape }}">Read paper {% include profile-icon.html name='arrow' %}</a></p></li>
         {% endfor %}
       </ul>
     </section>
@@ -61,8 +61,8 @@ redirect_from:
       <article class="publication" aria-labelledby="{{ paper.id }}-title">
         <div class="paper-meta"><span class="venue">{{ paper.venue }}</span><span>{{ paper.year }}</span></div>
         <h3 id="{{ paper.id }}-title"><a href="{{ paper.paper_url }}">{{ paper.title }}</a></h3>
-        <p class="authors">{% for author in paper.authors %}{% if author.name == profile.name %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.equal %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
-        <p class="equal-note">* Equal contribution</p>
+        <p class="authors">{% for author in paper.authors %}{% if author.name == profile.name %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% if author.equal or author.core %}<sup>*</sup>{% endif %}{% if author.corresponding %}<sup>†</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+        {% if paper.contribution_note %}<p class="equal-note">{{ paper.contribution_note }}</p>{% endif %}
         <p class="paper-summary">{{ paper.summary }}</p>
         {% if paper.image %}
         <figure class="paper-figure">
@@ -73,7 +73,7 @@ redirect_from:
         </figure>
         {% endif %}
         <div class="paper-metrics">{% for metric in paper.metrics %}<span><strong>{{ metric.value }}</strong> {{ metric.label }}</span>{% endfor %}</div>
-        <div class="paper-links"><a href="{{ paper.paper_url }}">Paper {% include profile-icon.html name='arrow' %}</a><a href="{{ paper.code_url }}">Code {% include profile-icon.html name='arrow' %}</a><a href="{{ paper.project_url }}">Project {% include profile-icon.html name='arrow' %}</a><a href="{{ paper.data_url }}">Dataset {% include profile-icon.html name='arrow' %}</a></div>
+        <div class="paper-links">{% if paper.paper_url %}<a href="{{ paper.paper_url }}">Paper {% include profile-icon.html name='arrow' %}</a>{% endif %}{% if paper.code_url %}<a href="{{ paper.code_url }}">Code {% include profile-icon.html name='arrow' %}</a>{% endif %}{% if paper.project_url %}<a href="{{ paper.project_url }}">{{ paper.project_label | default: 'Project' }} {% include profile-icon.html name='arrow' %}</a>{% endif %}{% if paper.data_url %}<a href="{{ paper.data_url }}">Dataset {% include profile-icon.html name='arrow' %}</a>{% endif %}</div>
         <details class="citation"><summary>BibTeX <span aria-hidden="true">+</span></summary><div class="citation-body"><button type="button" class="copy-citation" hidden>Copy citation</button><pre><code>{{ paper.citation | escape }}</code></pre><span class="copy-status" role="status" aria-live="polite"></span></div></details>
       </article>
       {% endfor %}
